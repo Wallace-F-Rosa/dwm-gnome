@@ -1,0 +1,5 @@
+# -*- mode: conf -*-
+
+[GNOME Session]
+Name=dwm-gnome
+RequiredComponents=gnome-settings-daemon;dwm-gnome;
