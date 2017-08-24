@@ -1,8 +1,12 @@
 # -*- mode: conf -*-
 
 [Desktop Entry]
-Comment=GNOME session management + dwm
+Name=GNOME + dwm
+Comment=This session logs you into GNOME with dwm as the window manager
 Exec=gnome-session --session=dwm-gnome
-Name=GNOME + DWM
-TryExec=gnome-session
+TryExec=dwm-gnome
+Icon=
+Type=Application
+DesktopNames=Unity
+X-Ubuntu-Gettext-Domain=gnome-session-3.0
 Type=XSession
