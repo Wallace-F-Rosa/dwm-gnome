@@ -1,11 +1,10 @@
-# -*- mode: conf -*-
-
 [Desktop Entry]
-Comment=Suckless dynamic tiling window manager, registers with gnome session manager.
-Exec=dwm-gnome
-Name=dwm-gnome
 Type=Application
-X-GNOME-Autostart-Notify=false
+Name=dwm-gnome
+NoDisplay=true
+Comment=improved dynamic tiling window manager
+Exec=dwm-gnome
+X-GNOME-WMName=dwm-gnome
 X-GNOME-Autostart-Phase=WindowManager
 X-GNOME-Provides=windowmanager
-X-GNOME-WMName=dwm
+X-GNOME-Autostart-Notify=false
