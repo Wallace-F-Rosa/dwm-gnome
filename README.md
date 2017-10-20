@@ -4,7 +4,7 @@
 
 --------------------------------------------------------------------------------
 
-Allows you to use dwm-wm with GNOME 3 Session infrastructure on Arch Linux.
+Allows you to use dwm-wm with GNOME 3 Session infrastructure in Arch Linux.
 
 Use the AUR package `dwm-gnome` for easy installation.
 
