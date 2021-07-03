@@ -28,8 +28,8 @@ install:
 	$(INSTALL) -m0644 -D session/dwm-gnome.session $(PATH_DWM_GNOME_SESSION)
 	$(INSTALL) -m0755 -D session/dwm-gnome $(PATH_DWM_GNOME)
 	$(INSTALL) -m0755 -D session/gnome-session-dwm $(PATH_GNOME_SESSION_DWM)
-	$(INSTALL) -m0644 README.md $(PATH_DOCS)/README.md
-	$(INSTALL) -m0644 LICENSE.txt $(PATH_LICENSE)/LICENSE
+	$(INSTALL) -m0644 -D README.md $(PATH_DOCS)/README.md
+	$(INSTALL) -m0644 -D LICENSE.txt $(PATH_LICENSE)/LICENSE
 
 
 uninstall:
