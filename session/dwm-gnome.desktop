@@ -2,7 +2,7 @@
 Type=Application
 Name=dwm-gnome
 NoDisplay=true
-Comment=improved dynamic tiling window manager
+Comment=suckless tiling window manager
 Exec=dwm-gnome
 X-GNOME-WMName=dwm-gnome
 X-GNOME-Autostart-Phase=WindowManager

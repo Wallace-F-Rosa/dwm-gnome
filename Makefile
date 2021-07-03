@@ -10,6 +10,8 @@ PATH_DWM_GNOME = $(PREFIX)/bin/dwm-gnome
 PATH_DWM_GNOME_DESKTOP = $(PREFIX)/share/applications/dwm-gnome.desktop
 PATH_DWM_GNOME_SESSION = $(PREFIX)/share/gnome-session/sessions/dwm-gnome.session
 PATH_DWM_GNOME_XSESSION = $(PREFIX)/share/xsessions/dwm-gnome.desktop
+PATH_GNOME_SESSION_DWM = $(PREFIX)/bin/gnome-session-dwm
+PATH_DOCS = $(PREFIX)/share/docs/dwm-gnome
 
 #
 # Targets
@@ -24,6 +26,9 @@ install:
 	$(INSTALL) -m0644 -D session/dwm-gnome.desktop $(PATH_DWM_GNOME_DESKTOP)
 	$(INSTALL) -m0644 -D session/dwm-gnome.session $(PATH_DWM_GNOME_SESSION)
 	$(INSTALL) -m0755 -D session/dwm-gnome $(PATH_DWM_GNOME)
+	$(INSTALL) -m0755 -D session/gnome-session-dwm $(PATH_GNOME_SESSION_DWM)
+	$(INSTALL) -m0644 LICENSE.txt $(PATH_DOCS)/LICENSE
+	$(INSTALL) -m0644 README.md $(PATH_DOCS)/README.md
 
 
 uninstall:
@@ -31,6 +36,8 @@ uninstall:
 	rm -f $(PATH_DWM_GNOME_DESKTOP)
 	rm -f $(PATH_DWM_GNOME_SESSION)
 	rm -f $(PATH_DWM_GNOME_XSESSION)
+	rm -f $(PATH_GNOME_SESSION_DWM)
+	rm -rf $(PATH_DOCS)
 
 
 .PHONY: all install uninstall
