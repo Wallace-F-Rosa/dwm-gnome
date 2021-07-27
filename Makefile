@@ -3,8 +3,8 @@
 #
 
 INSTALL = install
-DESTDIR ?= /
-PREFIX  ?= $(DESTDIR)/usr
+DESTDIR ?= 
+PREFIX  ?= /usr
 
 PATH_DWM_GNOME = $(PREFIX)/bin/dwm-gnome
 PATH_DWM_GNOME_DESKTOP = $(PREFIX)/share/applications/dwm-gnome.desktop
@@ -26,7 +26,6 @@ install:
 	$(INSTALL) -m0644 -D session/dwm-gnome-xsession.desktop $(PATH_DWM_GNOME_XSESSION)
 	$(INSTALL) -m0644 -D session/dwm-gnome.desktop $(PATH_DWM_GNOME_DESKTOP)
 	$(INSTALL) -m0644 -D session/dwm-gnome.session $(PATH_DWM_GNOME_SESSION)
-	$(INSTALL) -m0755 -D session/dwm-gnome $(PATH_DWM_GNOME)
 	$(INSTALL) -m0755 -D session/gnome-session-dwm $(PATH_GNOME_SESSION_DWM)
 	$(INSTALL) -m0644 -D README.md $(PATH_DOCS)/README.md
 	$(INSTALL) -m0644 -D LICENSE.txt $(PATH_LICENSE)/LICENSE
